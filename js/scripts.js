@@ -1,8 +1,12 @@
 $(document).ready(function() {
   $("button#Jerrybutton").click(function() {
-    $("#Jerry").prepend("<li>Hello Jesus</li>");
+    $("ul#Jerry").append("<li>Hey Jesus</li>");
+    $("ul#Jerry").append("<li>Wanna see something?</li>");
+    $("ul#Jerry").children("li").first().click(function(){
+      $(".hiddenpic").removeClass();
+    });
   });
   $("button#Jesusbutton").click(function() {
-    $("#Jesus").prepend("<li>Sup Jerbear!</li>");
+    $("ul#Jesus").prepend("<li>Sup Jerbear!</li>");
   });
 });

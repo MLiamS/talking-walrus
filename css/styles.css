@@ -6,3 +6,7 @@
 .clickable:hover{
   text-decoration: underline;
 }
+
+.hiddenpic{
+  display:none;
+}
